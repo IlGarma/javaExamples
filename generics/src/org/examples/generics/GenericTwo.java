@@ -37,9 +37,9 @@ public class GenericTwo<K,T> {
 
     public void compare (GenericTwo<K,T> test) {
         if (parameter2 == test.getParameter2() && parameter1 == test.getParameter1()) {
-            System.out.println("Same elements");
+            System.out.println("Parameters with the same value");
         } else {
-            System.out.println("Different elements");
+            System.out.println("Parameters with different values");
         }
     }
 

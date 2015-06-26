@@ -22,6 +22,14 @@ public class TestAll {
         integerString.compare(new GenericTwo<Integer,String>(88, "Test"));
         integerString.compare(new GenericTwo<Integer,String>(88, "Tekst"));
 
+        GenericTwoWildcards <String, Double > genericTwoWildcards = new GenericTwoWildcards<String, Double>("peppe", 88.99);
+        genericTwoWildcards.compareClass(new GenericTwoWildcards<Double, String>(99.99, "Ciao"));
+        genericTwoWildcards.compareClass(new GenericTwoWildcards<String, Double>("Los", 123.99));
+
+        GenericExtends < Integer, Double > genericExtends = new GenericExtends<Integer, Double>(20, 33.9999);
+        genericExtends.compareNumber(new GenericExtends<Integer, Double>(20, 33.9999));
+        genericExtends.compareNumber(new GenericExtends<Integer, Double>(21, 33.9999));
+        //genericExtends.compareNumber(new GenericExtends<Double, Integer>(21.01, 33)); compilation error since genericExtends is <Integer, Double>
 
     }
 }
