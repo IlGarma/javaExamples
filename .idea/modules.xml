@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/javaExamples.iml" filepath="$PROJECT_DIR$/javaExamples.iml" />
       <module fileurl="file://$PROJECT_DIR$/lambda/lambda.iml" filepath="$PROJECT_DIR$/lambda/lambda.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multithread/multithread.iml" filepath="$PROJECT_DIR$/multithread/multithread.iml" />
     </modules>
   </component>
 </project>
