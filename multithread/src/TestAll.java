@@ -19,5 +19,17 @@ public class TestAll {
         forthThread.waitUntilToComplete();
 
         System.out.println("\nMain Thread - Now I can stop");
+
+        MySyncroThread thread5 = new MySyncroThread("Thread 5");
+        MySyncroThread thread6 = new MySyncroThread("Thread 6");
+        thread5.waitUntilIsFinished();
+        thread6.waitUntilIsFinished();
+
+        System.out.println("Syncronized block");
+        MySyncroThread2 thread7 = new MySyncroThread2("Thread 7");
+        MySyncroThread2 thread8 = new MySyncroThread2("Thread 8");
+
+        thread7.waitFinish();
+        thread8.waitFinish();
     }
 }
