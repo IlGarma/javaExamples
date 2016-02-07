@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <option name="DEFAULT_COMPILER" value="Eclipse" />
     <resourceExtensions />
     <wildcardResourcePatterns>
       <entry name="!?*.java" />
@@ -23,11 +22,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="spring" />
+        <module name="springBoot" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="spring" target="1.5" />
+      <module name="springBoot" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
